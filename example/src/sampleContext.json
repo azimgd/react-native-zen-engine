@@ -1,0 +1,9 @@
+{
+  "user": {
+      "id": "12345",
+      "preferences": {
+          "color": "blue",
+          "size": "large"
+      }
+  }
+}

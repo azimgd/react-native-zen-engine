@@ -1,0 +1,24 @@
+[package]
+name = "zen-ffi"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+publish = false
+
+[dependencies]
+anyhow = "1.0.89"
+libc = "0.2.155"
+serde = "1.0.210"
+serde_json = "1.0.128"
+strum = { version = "0.26.3", features = ["derive"] }
+tokio = { version = "1.40.0", features = ["rt"] }
+zen-engine = "0.29.1"
+zen-expression = "0.29.1"
+zen-tmpl = "0.29.1"
+rquickjs-sys = { version = "0.6.2", features = ["bindgen"] }
+
+[lib]
+crate-type = ["cdylib", "staticlib"]
+
+[build-dependencies]
+cbindgen = "0.26.0"
