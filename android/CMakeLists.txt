@@ -10,10 +10,9 @@ add_library(react-native-zen-engine SHARED
     cpp-adapter.cpp
 )
 
-# Add the directory containing rnzensdk.h to the include path
 target_include_directories(react-native-zen-engine PRIVATE
     ../cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/../zenffi/generated/include
+    ../zenffi/generated/include
 )
 
 cmake_path(SET LIBZENFFI ${CMAKE_CURRENT_SOURCE_DIR}/jniLibs/${ANDROID_ABI}/libzen_ffi.so NORMALIZE)
